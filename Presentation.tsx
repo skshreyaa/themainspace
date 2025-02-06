@@ -75,3 +75,4 @@ function Presentation() {
     </div>
   );
 }
+export default Presentation
