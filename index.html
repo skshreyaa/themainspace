@@ -3,126 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Presentation</title>
+    <title>Presentation Page</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-    <div id="app">
-        <!-- Home Page -->
-        <div id="home" class="page active">
-            <div class="container">
-                <div class="card">
-                    <!-- Header Section -->
-                    <div class="profile-section">
-                        <img src="otter.png" 
-                             alt="Profile" 
-                             class="profile-image">
-                        <div class="profile-info">
-                            <h1>Your Name</h1>
-                            <p>Registration Number: XXXXXXXXXXXXX</p>
-                            <p>Department: Computer Science</p>
-                            <p>Section: A</p>
-                            <p>Batch: 2024</p>
-                        </div>
-                    </div>
+    <div id="home" class="container">
+        <header class="header">
+            <img src="otter.png" alt="Headshot" class="headshot">
+            <h1>Your Name</h1>
+            <p>Registered Number: 123456</p>
+            <p>Department: Computer Science</p>
+            <p>Section: A</p>
+            <p>Batch: 2023</p>
+        </header>
+        <main>
+            <h2>Presentation</h2>
+            <p>Subject: Database Management Systems</p>
+            <button id="startPresentation">Start Presentation</button>
+            <button id="seminarReport">Seminar Report</button>
+        </main>
+    </div>
 
-                    <!-- Presentation Title -->
-                    <div class="presentation-section">
-                        <h2>Database Management Systems</h2>
-                        <h3>Technical Presentation</h3>
-                        
-                        <div class="button-group">
-                            <button onclick="navigateTo('presentation')" class="btn btn-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h20"></path><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"></path><path d="m7 21 5-5 5 5"></path></svg>
-                                View Presentation
-                            </button>
-                            <button onclick="navigateTo('report')" class="btn btn-secondary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
-                                View Report
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Presentation Page -->
-        <div id="presentation" class="page">
-            <div class="wave-background">
-                <div class="wave wave-1"></div>
-                <div class="wave wave-2"></div>
-            </div>
-            
-            <button onclick="navigateTo('home')" class="back-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
-                Back to Home
-            </button>
-
-            <div class="presentation-container">
-                <div class="presentation-frame">
-                    <iframe
-                        src="https://www.canva.com/design/DAGd9o6p5qM/embed"
-                        width="100%"
-                        height="100%"
-                        allowfullscreen
-                        title="Presentation"
-                    ></iframe>
-                </div>
-            </div>
-        </div>
-
-        <!-- Report Page -->
-        <div id="report" class="page">
-            <div class="container">
-                <button onclick="navigateTo('home')" class="back-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
-                    Back to Home
-                </button>
-
-                <div class="report-card">
-                    <h1>Seminar Report</h1>
-                    <div class="report-content">
-                        <!-- Add the content from the PDF -->
-                        <h2>Case Study - Leveraging Apple Intelligence Using New Age DBMS</h2>
-                        <p><strong>Name:</strong> S K Shreya</p>
-                        <p><strong>Branch:</strong> BTech CSE B</p>
-                        <p><strong>Roll Number:</strong> 1223H510233</p>
-
-                        <h3>Introduction</h3>
-                        <p>
-                            The integration of Database Management Systems (DBMS) in Apple Inc.'s intelligence framework is essential for optimizing data management and enhancing analytical capabilities. This report explores how Apple leverages DBMS technologies to improve operational efficiency, customer relationship management, and business intelligence.
-                        </p>
-
-                        <h3>DBMS Integration in Apple's Operations</h3>
-                        <p>
-                            <strong>Data Processing and Management:</strong> Apple employs advanced DBMS solutions to handle the vast amounts of data generated by its products and services. This includes data from iCloud, Apple Music, and the App Store, which are crucial for understanding user interactions and preferences.
-                        </p>
-                        <p>
-                            <strong>Customer Relationship Management (CRM):</strong> The integration of DBMS allows Apple to maintain detailed customer profiles, enabling personalized marketing strategies. By analyzing customer data, Apple can tailor its offerings to meet specific user needs, enhancing customer satisfaction and loyalty.
-                        </p>
-                        <p>
-                            <strong>Business Intelligence (BI):</strong> Apple utilizes DBMS to support its BI initiatives, providing insights that drive strategic decision-making. The ability to analyze trends and patterns in consumer behavior helps Apple stay ahead of market demands and innovate effectively.
-                        </p>
-
-                        <h3>Privacy and Data Protection</h3>
-                        <p>
-                            <strong>User Privacy Commitment:</strong> Apple’s approach to DBMS integration emphasizes user privacy. The company has implemented robust data protection measures to ensure user confidentiality.
-                        </p>
-                        <p>
-                            <strong>Data Encryption and Security:</strong> Apple employs encryption technologies within its DBMS to safeguard sensitive information. This commitment to security not only protects user data but also builds trust with customers, reinforcing Apple’s brand reputation.
-                        </p>
-
-                        <h3>Impact on Innovation and Customer Satisfaction</h3>
-                        <p>
-                            <strong>Driving Innovation:</strong> The insights gained from DBMS analytics enable Apple to innovate continuously. By understanding customer preferences and market trends, Apple can develop new products and features that resonate with users.
-                        </p>
-                        <p>
-                            <strong>Enhancing Customer Experience:</strong> The integration of DBMS contributes to a seamless customer experience across Apple’s ecosystem. By providing personalized recommendations and efficient service, Apple enhances user engagement and satisfaction.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <div id="presentation" class="container hidden">
+        <button id="backToHome">Back</button>
+        <div class="confetti"></div>
+        <div class="presentation-window">
+            <iframe src="https://www.canva.com/design/DAGd9o6p5qM/ldUVdgdgWTEG_MSRtJvvvA/embed" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 
